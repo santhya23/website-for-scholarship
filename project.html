@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home" class="section">
+        <h1>Welcome to the ABC Scholarship</h1>
+        <p>The ABC Scholarship provides financial support to students pursuing higher education. Apply now for a chance to receive funding and achieve your academic goals.</p>
+        <a href="#apply" class="btn">Start Application</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About the Scholarship</h2>
+        <p>The ABC Scholarship is awarded to students who have demonstrated academic excellence and community involvement. This scholarship is designed to assist in furthering education for bright minds worldwide.</p>
+        <p><strong>Eligibility:</strong> Open to undergraduate and graduate students worldwide.</p>
+    </section>
+    <section id="apply" class="section">
+        <h2>Application Form</h2>
+        <form id="application-form" action="submit_form.php" method="POST" enctype="multipart/form-data">
+            <!-- Personal Information Section -->
+            <h3>Personal Information</h3>
+    
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+    
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+    
+            <label for="fatherOccupation">Father's Occupation:</label>
+            <input type="text" id="fatherOccupation" name="fatherOccupation" required>
+    
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="motherName" required>
+    
+            <label for="community">Community:</label>
+            <input type="text" id="community" name="community" required>
+    
+            <label for="schoolMarks">School Marks (10th & 12th):</label>
+            <input type="text" id="schoolMarks" name="schoolMarks" required>
+    
+            <label for="ugPercentage">Undergraduate Percentage:</label>
+            <input type="text" id="ugPercentage" name="ugPercentage" required>
+    
+            <label for="currentSchool">Current School/University:</label>
+            <input type="text" id="currentSchool" name="currentSchool" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+    
+            <label for="address">Home Address:</label>
+            <input type="text" id="address" name="address" required>
+    
+            <!-- New Fields for Age, Scholarship History, and First Graduate Status -->
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <small>Age will be calculated based on the Date of Birth</small>
+    
+            <label for="scholarshipHistory">Have you received a scholarship before?</label>
+            <select id="scholarshipHistory" name="scholarshipHistory" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+    
+            <label for="firstGraduate">Are you a first-generation graduate in your family?</label>
+            <select id="firstGraduate" name="firstGraduate" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+    
+            <!-- Academic Background Section -->
+            <h3>Academic Background</h3>
+            <label for="transcript">Upload Academic Transcript:</label>
+            <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx,.jpg,.png" required>
+
+            <!-- Essay Section -->
+            <h3>Essay Section</h3>
+            <label for="essay">Personal Statement (Max 1000 words):</label>
+            <textarea id="essay" name="essay" rows="6" required></textarea>
+
+            <label for="communityService">Community Service (Max 500 words):</label>
+            <textarea id="communityService" name="communityService" rows="6" required></textarea>
+
+            <!-- Letters of Recommendation -->
+            <h3>Letters of Recommendation</h3>
+            <label for="letter1">Letter of Recommendation 1:</label>
+            <input type="file" id="letter1" name="letter1" accept=".pdf,.doc,.docx,.jpg,.png" required>
+
+            <label for="letter2">Letter of Recommendation 2:</label>
+            <input type="file" id="letter2" name="letter2" accept=".pdf,.doc,.docx,.jpg,.png" required>
+
+            <!-- Supporting Documents -->
+            <label for="otherDocuments">Other Documents (Optional):</label>
+            <input type="file" id="otherDocuments" name="otherDocuments" accept=".pdf,.doc,.docx,.jpg,.png">
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about the scholarship or the application process, feel free to reach out:</p>
+        <p>Email: <a href="mailto:support@abcscholarship.org">support@abcscholarship.org</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ABC Scholarship. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+    </section>
+    
+
+</body>
+</html>
